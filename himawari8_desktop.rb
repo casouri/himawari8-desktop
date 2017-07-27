@@ -27,7 +27,7 @@ def generateImage
     base_img_url + format_date + '_1_1.png'
   ]
 
-  # create a image and comine for pieces
+  # create a image and comine four pieces
   MiniMagick::Tool::Convert.new do |convert|
     convert << "-size" << "2134x1200" << "xc:black"
     convert << "-strip"
